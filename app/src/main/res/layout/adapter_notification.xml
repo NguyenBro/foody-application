@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp">
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="384dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/custom_view_white"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view12"
+        app:srcCompat="@drawable/ic_baseline_check_circle_outline_green_24" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="6dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view12"
+        app:srcCompat="@drawable/ic_baseline_highlight_off_24" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="6dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view12"
+        app:srcCompat="@drawable/ic_baseline_bus_alert_24" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="6dp"
+        android:text="Successful delivery"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@+id/view12"
+        app:layout_constraintTop_toTopOf="@+id/view12" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="20 hours ago"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view12"
+        app:layout_constraintTop_toTopOf="@+id/view12" />
+
+    <View
+        android:id="@+id/view13"
+        android:layout_width="354dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintEnd_toEndOf="@+id/view12"
+        android:background="#D50000"
+        app:layout_constraintStart_toStartOf="@+id/view12"
+        app:layout_constraintTop_toTopOf="@+id/view12" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:text="Your order has been successfully delivered"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@+id/view12"
+        app:layout_constraintTop_toBottomOf="@+id/view13" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="7dp"
+        android:textSize="15sp"
+        android:textColor="#292929"
+        android:text="The app confirms you have successfully received your $50 order. Thank you for using the app"
+        app:layout_constraintStart_toStartOf="@+id/view12"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

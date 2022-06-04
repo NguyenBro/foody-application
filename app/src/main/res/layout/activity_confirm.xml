@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmActivity">
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="406dp"
+        android:layout_height="662dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/apimap" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="390dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginTop="4dp"
+        android:text="Food Arriving in 10 mins"
+        android:gravity="center_vertical"
+        android:textSize="19sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toTopOf="@+id/view7" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view7"
+        app:srcCompat="@drawable/ic_baseline_subdirectory_arrow_left_24" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="390dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#A8A8A8"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="390dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="84dp"
+        android:background="#A8A8A8"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textViewFood_Confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:text="Pizza Hutt"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+    <TextView
+        android:id="@+id/textViewDescription_Confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Total: $50 (2 items) - Cash"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFood_Confirm" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:text="Detail"
+        android:textColor="#0056D5"
+        android:textAllCaps="true"
+        android:background="@drawable/custom_button_white"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="#0056D5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view10"
+        app:srcCompat="@drawable/ic_baseline_text_snippet_24" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="22dp"
+        android:text="Confirmed!"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView20"
+        app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="22dp"
+        android:text="Preparing Order"
+        android:textColor="#535353"
+        android:textSize="19dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView20"
+        app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/progress_circular1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        app:background_progressbar_color="#FFCDD2"
+        app:background_progressbar_width="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view10"
+        app:progressbar_color="#F44336"
+        app:progressbar_width="10dp" />
+
+    <ImageView
+        android:id="@+id/imageView199"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="344dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view7"
+        app:srcCompat="@drawable/ic_baseline_highlight_off_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
